@@ -1,0 +1,25 @@
+/*
+
+ Patient Details table to store personal details of a patient
+
+*/
+CREATE TABLE `patient_details` (
+  `patient_id` int(9) PRIMARY KEY AUTO_INCREMENT,
+  `first_name` char(250) NOT NULL,
+  `last_name` char(250) NOT NULL,
+  `year_of_birth` smallint(4) NOT NULL,
+  `gender` set('MALE','FEMALE') NOT NULL DEFAULT 'MALE',
+  `weight` smallint(3) DEFAULT NULL,
+  `height` smallint(3) DEFAULT NULL,
+  `city` char(250) DEFAULT NULL,
+  `locality` char(250) DEFAULT NULL,
+  `street_address` varchar(500) DEFAULT NULL,
+  `occupation` char(250) DEFAULT NULL,
+  `mobile_number` bigint(10) NULL,
+  `email_id` char(250) DEFAULT NULL,
+  `blood_group` char(5) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+------------------------------------------------------------------------------------------------------
+
